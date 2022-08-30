@@ -21,6 +21,7 @@ a:visited {
 
 body{
     margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+    background-color: hsl(0, 0%, 81%);
 }
 
 img {
@@ -50,4 +51,56 @@ img {
 
 .mainNav a {
     padding: .5em;
+}
+
+
+.productlist main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    gap: 2rem;
+}
+
+.productlist main h2 {
+    grid-column: 1/-1;
+}
+
+.productlist article h3 {
+    font-size: 1rem;
+    flex-grow: 3;
+}
+
+.productlist article.soldOut img {
+    opacity: 0.5;
+}
+
+.productlist article.soldOut::before {
+    content: "Sold Out";
+    position: absolute;
+    background-color: antiquewhite;
+    padding: 1rem;
+}
+
+.productlist article .discounted,
+.productlist article .price span {
+  display: none;
+}
+.productlist article.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+.discounted > p {
+  margin-bottom: 0;
+}
+.productlist article.onSale .price span {
+  display: initial;
+}
+.productlist article button {
+  margin-top: auto;
+}
+.productlist article {
+  margin-bottom: 1rem;
+}
+.discounted p:last-child {
+  background: red;
+  padding: 0.2rem;
 }
