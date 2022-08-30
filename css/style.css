@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+margin: 0;
+padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color:black ;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+
+body{
+    margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+.mainNav h1  {
+    font-size: 3em;
+}
+
+.mainNav h2  {
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+
+.mainNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.mainNav a {
+    padding: .5em;
+}
