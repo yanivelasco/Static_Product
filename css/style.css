@@ -54,6 +54,8 @@ img {
 }
 
 
+/* PRODUCT LIST */
+
 .productlist main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
@@ -103,4 +105,46 @@ img {
 .discounted p:last-child {
   background: red;
   padding: 0.2rem;
+}
+
+/* PRODUCT */
+
+.breadcrumbs {
+    list-style-type: none;
+    display: flex;
+    font-size: 1em;
+}
+
+.breadcrumbs a {
+    padding: .2em;
+}
+
+.purchaseBox {
+    background: #d8d8d8;
+    padding: 1rem;
+}
+
+.info {
+    padding: 1rem;
+}
+.product select {
+    min-width: 100px;
+}
+.product main {
+    display: grid;
+}
+.product main .breadcrumbs,
+.product main img {
+    grid-column: 1/-1;
+}
+.purchaseBox form label {
+    gap: 1rem;
+}
+.purchaseBox button {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
+dt {
+    font-weight: 700;
 }
