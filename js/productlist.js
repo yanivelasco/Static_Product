@@ -18,8 +18,11 @@ function showProduct(product){
 
     const template = document.querySelector("#smallProductTemplate").content;
     const copy = template.cloneNode(true);
+    copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`
     copy.querySelector(".subtle").textContent =  `${product.articletype} | ${product.brandname}` 
     copy.querySelector("h3").textContent = product.productdisplayname;
+    copy.querySelector(".price").textContent = product.price;
+    copy.querySelector("a").href = `product.html?id=${product.id}`
     // if(product.soldout){
     //     copy.querySelector("article").classList.add("soldOut");
     // }
