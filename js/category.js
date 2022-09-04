@@ -2,10 +2,10 @@ const url = "https://kea-alt-del.dk/t7/api/brands";
 
 fetch(url)
   .then((res) => res.json())
-  .then((data) => handleBrandList(data));
+  .then((data) => goThroughEach(data));
 
 
-function handleBrandList(data) {
+function goThroughEach(data) {
   console.log(data);
   data.forEach(showBrand);
 }
