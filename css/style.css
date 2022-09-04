@@ -18,7 +18,13 @@ a:visited {
     text-decoration: none; 
     color: black; 
    }
-
+a:target{
+    color: blue;
+}
+a:hover{
+    color: blue;
+    cursor: pointer;
+}
 body{
     margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
     background-color: hsl(0, 0%, 81%);
